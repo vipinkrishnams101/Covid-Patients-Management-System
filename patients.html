@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CO19</title>
+  {% load static %}
+
+<link rel="icon"href="{% static 'co19.png' %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top navbar-expand-md  bg-dark navbar-dark">
+  <a style="padding-bottom: 45px" class="navbar-brand" href="#">Covid Patients Management System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/#Home">Home</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/#Safety-Precautions">Safety-Precautions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#View-Patients">View-Patients</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/#Vaccination-Register">Vaccination-Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/display1?">Test-Results</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/#Contact">Contact</a>
+      </li>    
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/accounts/sign_up/">
+        Sign-Up
+        </a>
+      </li>
+      <li><a class="nav-link" href="#">
+        <form style="color: black" action="logout">
+        <input type="submit" value="Logout">
+        </form> 
+        </a>
+        </li>
+    </ul>
+  </div>  
+</nav>
+<br>
+<div style="padding-top: 80px" id="View-Patients" class="container-fluid">
+    <form action="display">
+  <table style="table-layout: solid" class="table table-hover table-bordered">
+    <thead class="thead-dark">
+    <tr style="color: black">
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Address</th>
+      <th>Mobile Number</th>
+      <th>Ward Number</th>
+    </thead>
+    <tbody>
+    {% for i in pdtls %}
+    <tr style="color: black">
+      <td>{{i.name}}</td>
+      <td>{{i.age}}</td>
+      <td>{{i.gender}}</td>
+      <td>{{i.address}}</td>
+      <td>{{i.mobilenumber}}</td>
+      <td>{{i.wardnumber}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <input type="submit" value="View All"><br>
+</form>
+</section>
+</div>
+</body>
+</html>
+
+
