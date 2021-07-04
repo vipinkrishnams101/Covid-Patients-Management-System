@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CO19</title>
+  {% load static %}
+
+<link rel="icon"href="{% static 'co19.png' %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top navbar-expand-md  bg-dark navbar-dark">
+  <a style="padding-bottom: 45px" class="navbar-brand" href="#">Covid Patients Management System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#Home">Home</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#Safety-Precautions">Safety-Precautions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/display?">View-Patients</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#Vaccination-Register">Vaccination-Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/display1?">Test-Results</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Contact">Contact</a>
+      </li>    
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/accounts/sign_up/">
+        Sign-Up
+        </a>
+      </li>
+      <li><a class="nav-link" href="#">
+        <form style="color: black" action="logout">
+        <input type="submit" value="Logout">
+        </form> 
+        </a>
+        </li>
+    </ul>
+  </div>  
+</nav>
+<br>
+<div id="Home" style="padding-top: 50px">
+    {% load static %}
+<img style=" border: 0px solid #ddd;
+  border-radius: 4px;
+  width: 300px;
+  margin-bottom: 50px" src="{% static 'co191.jpg' %}" alt="My image">
+  {% load static %}
+<img style=" border: 0px solid #ddd;
+  border-radius: 4px;
+  width: 300px
+  height:100px;
+  margin-bottom: 50px" src="{% static 'co19.jpeg' %}" alt="My image">
+  {% load static %}
+<img style=" border: 0px solid #ddd;
+  border-radius: 4px;
+  width: 300px;
+  margin-bottom: 50px" src="{% static 'co192.jpg' %}" alt="My image">
+</div>
+<div id="Safety-Precautions" class="container-fluid" style="padding-top: 50px">
+  <h3 style="text-align: center;text-decoration: underline;font-weight: bold;">കൊറോണ വൈറസിനെ ഭയക്കേണ്ട; വേണ്ടത് ജാഗ്രതയും പ്രതിരോധവും</h3><br>
+  <p>ചൈനയിൽ പലരുടെയും മരണത്തിനിടയാക്കിയ ഈ മാരക വൈറസിനെ നേരിടാനുള്ള മുൻകരുതലുകൾ ലോകമെമ്പാടും സ്വീകരിച്ച് കഴിഞ്ഞു. ഇന്ത്യ ഉൾപ്പടെ വിവിധ രാജ്യങ്ങളിലേക്ക് ഈ വൈറസ് പടർന്ന് കഴിഞ്ഞു. കൊറോണ വൈറസിനെ പ്രതിരോധിക്കാൻ നാം എന്തൊക്കെ കാര്യങ്ങളാണ് കൈക്കൊള്ളേണ്ടത്?</p>
+  <p>സാധാരണ ജലദോഷം മുതൽ അക്യൂട്ട് റെസ്പിറേറ്ററി സിൻഡ്രോം വരെയുള്ള രോഗങ്ങൾക്ക് കാരണമാകുന്ന വൈറസുകളുടെ ഒരു വലിയ കുടുംബമാണ് കൊറോണ വൈറസ് (കൊവിഡ്19). എന്നാൽ ചൈനയിൽ നിരവധി പേരുടെ മരണത്തിനിടയാക്കിയ ഈ മാരക വൈറസ് മുമ്പെങ്ങും കണ്ടിട്ടില്ലാത്ത ഒരു പുതിയ വിപത്താണ്. ഏറ്റവും ഒടുവിലത്തെ വിവരങ്ങൾ 160 ലധികം രാജ്യങ്ങളിലേക്ക് കൊറോണ വൈറസ് അഥവാ കൊവിഡ് 19 ബാധിച്ച് കഴിഞ്ഞു. ഇന്ത്യയിലും കൊറോണ സ്ഥിരീകരിച്ചത് ജനങ്ങളിൽ ആശങ്ക വർദ്ധിപ്പിച്ചിരിക്കുകയാണ്. ഈ സമയത്ത് നാം ചെയ്യേണ്ടത് കൊറോണ വൈറസിനെ പ്രതിരോധിക്കാൻ വേണ്ട മുൻകരുതലുകൾ സ്വീകരിക്കുക എന്നത് മാത്രമാണ്.</p>
+  <h3 style="text-align: center">കൊറോണ വൈറസ് അഥവാ കൊവിഡ് 19 നെ കുറിച്ച് കൂടുതലറിയാം.</h3>
+  <h5>കൊറോണ വൈറസിന്റെ ലക്ഷണങ്ങൾ?</h5>
+  <p>ഡിസംബറിൽ ചൈനയിലെ വുഹാൻ എന്ന സ്ഥലത്ത് പൊട്ടിപ്പുറപ്പെട്ടതിനുശേഷം മൂവായിരത്തിലധികം ആളുകളുടെ മരണത്തിനിടയാക്കിയ കൊറോണ വൈറസ് (കൊവിഡ് 19) എന്ന അസാധാരണ വൈറസിന്റെ സാധാരണ ലക്ഷണങ്ങളിൽ പനി, ജലദോഷം, ചുമ, ശ്വാസതടസ്സം, ശ്വസന ബുദ്ധിമുട്ടുകൾ ലക്ഷണങ്ങളുണ്ടെന്ന് ലോകാരോഗ്യ സംഘടന (WHO) ചൂണ്ടിക്കാണിക്കുന്നു.</p>
+  <h5>കൊറോണ വൈറസ് എങ്ങനെ തടയാം?</h5>
+  <p>രോഗികളെ നിരീക്ഷിക്കുക, രോഗികളെ ചികിത്സിക്കുക എന്നിവയടക്കം രാജ്യങ്ങൾക്ക് എങ്ങനെ ഇതിനെതിരെ തയ്യാറെടുക്കാമെന്ന് ലോകാരോഗ്യ സംഘടന മാർഗനിർദേശം നൽകിയിട്ടുണ്ട്. സാമ്പിളുകൾ പരിശോധിക്കുന്നതിനുള്ള പ്രോട്ടോക്കോളുകൾ, രോഗികളെ ചികിത്സിക്കുക, ആരോഗ്യ കേന്ദ്രങ്ങളിൽ അണുബാധ നിയന്ത്രിക്കുക, ശരിയായ വസ്തുക്കൾ എത്തുന്നത് പരിപാലിക്കുക, ഈ പുതിയ വൈറസ് ബാധയെ കുറിച്ച് ബോധവത്കരണം ഉണ്ടാക്കുന്നതിനായി പൊതുജനങ്ങളുമായി ആശയവിനിമയം നടത്തുക എന്നിവ ഇതിൽ ഉൾപ്പെടുന്നു. കൊറോണ വൈറസിന്റെ പിടിയിൽ നിന്ന് രക്ഷ നേടുവാനുള്ള വാക്സിൻ ഇതുവരെ കണ്ടുപിടിച്ചിട്ടില്ല. ചുമ, തുമ്മൽ, പനി,ശ്വാസകോശ സംബന്ധമായ അസുഖങ്ങളുടെ ലക്ഷണങ്ങൾ എന്നിവ പ്രകടിപ്പിക്കുന്ന ആരുമായും ആളുകൾ അടുത്ത ബന്ധം ഒഴിവാക്കണമെന്നും ലോകാരോഗ്യ സംഘടന ഉപദേശിക്കുന്നു.</p>
+  <h5>എന്താണ് ഇതിനുള്ള ചികിത്സ?</h5>
+  <p>കൊറോണ വൈറസിന് കൃത്യമായ ചികിത്സ കണ്ടുപിടിക്കപ്പെട്ടിട്ടില്ല. ഏറ്റവും ഭയാനകമായ കാര്യമെന്തെന്നാൽ ഇതിന് പ്രതിരോധ വാക്‌സിനും ലഭ്യമല്ല. കൊറോണ വൈറസ് ബാധ തിരിച്ചറിഞ്ഞാൽ രോഗിയെ മറ്റുള്ളവരില്‍ നിന്ന് മാറ്റി ഐസൊലേറ്റ് ചെയ്താണ് ചികിത്സ നല്‍കേണ്ടത്. രോഗിക്ക് നിർബന്ധമായും വിശ്രമം അനുശാസിക്കുന്നതോടൊപ്പം ധാരാളം വെള്ളം കുടിക്കാനും ഡോക്ടർമാർ നിർദ്ദേശിക്കുന്നു.</p>
+  <h5>കൊറോണ വൈറസുകൾ എങ്ങനെ പടരുന്നു?</h5>
+  <p>മനുഷ്യരെ ഇപ്പോൾ ബാധിച്ചിരിക്കുന്ന കൊറോണ വൈറസുകൾ സാധാരണയായി ചുമ, തുമ്മൽ എന്നിവയിലൂടെയും കൈകൾ തമ്മിൽ തൊടുകയോ ഷേക്ക് ഹാൻഡ് കൊടുക്കുകയോ പോലുള്ള വ്യക്തിപരമായ സമ്പർക്കം വഴിയും വായുവിലൂടെയും മറ്റുള്ളവരിലേക്ക് വ്യാപിക്കുന്നു. വൈറസ് ഉള്ള ഒരു വസ്തുവിനെയോ ഉപരിതലത്തെയോ സ്പർശിച്ച ശേഷം, കൈ കഴുകുന്നതിനുമുമ്പ് വായ, മൂക്ക്, കണ്ണുകൾ എന്നിവിടങ്ങളിൽ നിങ്ങൾ തൊട്ടാൽ വൈറസുകൾ പടരാം.</p>
+  <h5>ഈ കാര്യങ്ങൾ ശ്രദ്ധിക്കുക</h5>
+  <p>പ്രധാനമായും ഈ വൈറസ് പടരുന്നത് ശരീര സ്രവങ്ങളില്‍ നിന്നാണ്. തുമ്മുക, ചുമയ്ക്കുക എന്നീ കാര്യങ്ങൾ അശ്രദ്ധമായോ അല്ലാതെയോ ചെയ്യുമ്പോൾ വായില്‍ നിന്ന് പുറത്തേക്ക് തെറിക്കുന്ന സ്രവങ്ങളിൽ ചിലപ്പോൾ വൈറസുകള്‍ ഉണ്ടായിരിക്കും. ഇത് വായുവിൽ പടരുകയും അടുത്തുള്ളവരിലേക്ക് വൈറസുകള്‍ എത്തുകയും ചെയ്യും.
+  </p>
+  <p>ഇത് കൂടാതെ, വൈറസ് ബാധയേറ്റ വ്യക്തിയെ സ്പര്‍ശിക്കുമ്പോഴോ അയാള്‍ക്ക് ഹസ്തദാനം നല്‍കുകയോ ചെയ്യുമ്പോഴും രോഗം രോഗം പടരാം.</p>
+  <p>കൊറോണ വൈറസ് ബാധിച്ച ഒരാള്‍ സ്പർശിച്ച വസ്തുക്കളില്‍ വൈറസ് സാന്നിധ്യം ഉണ്ടെങ്കിൽ ആ വസ്തുക്കള്‍ മറ്റൊരാള്‍ തൊട്ടതിന് ശേഷം ആ കൈകള്‍ കൊണ്ട് ആ വ്യക്തിയുടെ ശരീരഭാഗങ്ങളിൽ, പ്രത്യേകിച്ച് മൂക്കിലോ കണ്ണിലോ മറ്റോ തൊട്ടാലും രോഗം പടരും.</p>
+  <h5>കൊറോണ വൈറസ് മരണത്തിന് കാരണമാകുമോ?</h5>
+  <p>കൂടുതൽ കഠിനമായ കേസുകളിൽ, അണുബാധ, ന്യുമോണിയ, കടുത്ത അക്യൂട്ട് റെസ്പിറേറ്ററി സിൻഡ്രോം, വൃക്ക തകരാറ് എന്നിവയും, വേണമെങ്കിൽ മരണം വരെയും ഇത് മൂലം സംഭവിച്ചേക്കാം.</p>
+  <h5>കൊറോണ വൈറസ് എന്തുകൊണ്ടാണ് ഇത്ര ഭീകരമാകുന്നത്?</h5>
+  <p>ചൈനയിൽ ഈ പുതിയ അസാധാരണമായ വൈറസിന്റെ പ്രശ്നം കണ്ടെത്തിയത് മൂലം, ഇവിടേക്ക് പുറം രാജ്യത്ത് നിന്നുള്ള യാത്രക്കാരെ തടയുവാനും, അവർക്ക് യാത്രാ ഉപദേശങ്ങൾ നൽകാനും മറ്റ് രാജ്യങ്ങൾ നിർബന്ധിതരായി. മാരകമായ പകർച്ചവ്യാധി മനുഷ്യനിൽ നിന്ന് മനുഷ്യരിലേക്ക് പകരുന്ന ആദ്യത്തെ കേസ് സ്ഥിരീകരിച്ചപ്പോൾ തന്നെ ലോകമെമ്പാടുമുള്ള രാജ്യങ്ങൾ ഒരു മുന്നറിയിപ്പ് നൽകി. എന്നാൽ കഴിഞ്ഞ മൂന്ന് മാസങ്ങൾക്കിടയിൽ ഇന്ത്യ ഉൾപ്പടെ ഏതാണ്ട് എൺപത്തഞ്ചോളം രാജ്യങ്ങളിൽ കൊറോണ എത്തിക്കഴിഞ്ഞു. ചൈനയിൽ മാത്രം മരണം മൂവായിരത്തിലധികം! അതുകൊണ്ട് തന്നെ പല രാജ്യങ്ങളും സന്ദർശനത്തിന് കർശന വിലക്കേർപ്പെടുത്തിയിരിക്കുകയാണ്.</p>
+  <h5>കൊറോണ വൈറസിനെ എങ്ങനെ പ്രതിരോധിക്കണം?</h5>
+  <p>കൊറോണ വൈറസിനെ പ്രതിരോധിക്കാന്‍ ഇനി പറയുന്ന കാര്യങ്ങൾ നിർബന്ധമായും പിന്തുടരുക:</p><br>
+  <p>☛ പരിസരം വൃത്തിയായി സൂക്ഷിക്കുക. അതോടൊപ്പം വ്യക്തി ശുചിത്വം പാലിക്കുക.<br>
+
+    ☛ പുറത്തു പോയി വന്നാൽ കൈകാലുകളും ശരീരവും വൃത്തിയാക്കുക. ഒരു ഹാൻഡ്‌വാഷ് കയ്യിൽ കരുതാം. ഇതുപയോഗിച്ച് കൈകൾ വൃത്തിയാക്കുക.
+    <br>
+    ☛ ചുമയ്ക്കുമ്പോഴും തുമ്മുമ്പോഴും സ്രവങ്ങൾ വായുവിൽ പടരാതിരിക്കാൻ മൂക്കും വായും തൂവാല ഉപയോഗിച്ച് മൂടുക.
+    <br>
+    ☛ ജലദോഷം, പനി എന്നീ രോഗങ്ങൾ ഉള്ളവരിൽ നിന്ന് അകലം പാലിക്കുക.
+    <br>
+    ☛ ശരിയായ രീതിയിൽ പാകം ചെയ്യാത്ത മാംസം ഭക്ഷിക്കരുത്.
+    <br>
+    ☛ സുരക്ഷാമുൻകരുതലുകൾ സ്വീകരിച്ച ശേഷം മാത്രം വളര്‍ത്തുമൃഗങ്ങളുമായി പോലും ഇടപഴകുക.
+    <br>
+യാത്രകള്‍ നടത്തുന്നവർശ്വാസകോശ സംബന്ധമായ രോഗങ്ങള്‍ ഉള്ളവരുമായുള്ള സമ്പര്‍ക്കം ഒഴിവാക്കുന്നതും ഒരു മുൻകരുതലാണ്.</p>
+</div>
+<div id="Vaccination-Register" class="container" style="text-align: center;" >
+    <h2 id="Vaccination-Register">Vaccination-Registration Form</h2>
+    <form action="add" method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="name">Aadhaar Number:</label><input type="name" class="form-control" id="name" placeholder="Enter Aadhaar Number" name="anum">
+      </div>
+      <div class="form-group">
+        <label for="email">Name(as in Aadhaar Card):</label>
+        <input type="name" class="form-control" placeholder="Enter Name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="Password">Gender:</label>
+        <input  class="form-control" placeholder="Enter Gender" name="gender">
+      </div>
+       <div class="form-group">
+        <label for="Password">Year Of Birth(as in Aadhaar Card yyyy format):</label>
+        <input type="date" class="form-control" id="Password" placeholder="Enter Year Of Birth" name="dob">
+      </div>
+     <button type="submit" class="btn btn-secondary">Register</button>
+   </form> 
+  </div>
+<h1 style="text-align: center;padding-top: 50px">Help Line</h1>
+<div  id="Contact" class="row container-fluid" style="align-items: center;">
+  <div class="col-sm-6">
+  <h3>DPMSU Control Cell/Ambulance:</h3><br>
+  <ul>
+    <li>0491 2510574</li>
+    <li>0491 2510575</li>
+    <li>0491 2510576</li>
+    <li>0491 2510577</li>
+    <li> 0491 2510578</li>
+    <li>0491 2510579</li>
+    <li> 0491 2510580</li>
+    <li>0491 2510582</li>
+    <li>0491 2510583</li>
+
+  </ul>
+  </div>
+  <div class="col-sm-6">
+  <h3>Oxygen War Room :</h3><br>
+   <ul>
+    <li>0491 2510600</li>
+    <li>8898902376</li>
+    <li> 0491 2510603</li>
+    <li>0491 2510604</li>
+    <li>0491 2510605</li>
+    <li>0491 2510579</li>
+    <li> 0491 2510580</li>
+     <li>0491 2510582</li>
+    <li>0491 2510583</li>
+ </ul>
+ </div>
+</div>
+<div class="container-fluid bg-dark">
+  <h1>hadbfh</h1>
+</div>
+</body>
+</html>
+
+
